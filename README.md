@@ -100,8 +100,7 @@ Many users choose Linux for their desktop computers because it is free, open sou
 
 We can use those distros everywhere, including (web) servers, mobile devices, embedded systems, cloud computing, and desktop computing. For cyber security specialists, some of the most popular Linux distributions are but are not limited to:
 
-||||
-|---|---|---|
+||---|---|---|
 |[ParrotOS](https://www.parrotsec.org/)|[Ubuntu](https://ubuntu.com/)|[Debian](https://www.debian.org/)|
 |[Raspberry Pi OS](https://www.raspberrypi.com/software/)|[CentOS](https://www.centos.org/)|[BackBox](https://www.backbox.org/)|
 |[BlackArch](https://www.blackarch.org/)|[Pentoo](https://www.pentoo.ch/)||
