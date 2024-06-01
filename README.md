@@ -100,15 +100,18 @@ Many users choose Linux for their desktop computers because it is free, open sou
 
 We can use those distros everywhere, including (web) servers, mobile devices, embedded systems, cloud computing, and desktop computing. For cyber security specialists, some of the most popular Linux distributions are but are not limited to:
 
-||---|---|---|
-|[ParrotOS](https://www.parrotsec.org/)|[Ubuntu](https://ubuntu.com/)|[Debian](https://www.debian.org/)|
-|[Raspberry Pi OS](https://www.raspberrypi.com/software/)|[CentOS](https://www.centos.org/)|[BackBox](https://www.backbox.org/)|
-|[BlackArch](https://www.blackarch.org/)|[Pentoo](https://www.pentoo.ch/)||
+- [ParrotOS](https://www.parrotsec.org/)
+- [Ubuntu](https://ubuntu.com/)
+- [Debian](https://www.debian.org/)
+- [Raspberry Pi OS](https://www.raspberrypi.com/software/)
+- [CentOS](https://www.centos.org/)
+- [BackBox](https://www.backbox.org/)
+- [BlackArch](https://www.blackarch.org/)
+- [Pentoo](https://www.pentoo.ch/)
 
 The main differences between the various Linux distributions are the included packages, the user interface, and the tools available. Kali Linux is the most popular distribution for cyber security specialists, including a wide range of security-focused tools and packages. Ubuntu is widespread for desktop users, while Debian is popular for servers and embedded systems. Finally, red Hat Enterprise Linux and CentOS are popular for enterprise-level computing.
 
 ---
-
 ## Debian
 
 Debian is a widely used and well-respected Linux distribution known for its stability and reliability. It is used for various purposes, including desktop computing, servers, and embedded system. It uses an Advanced Package Tool (`apt`) package management system to handle software updates and security patches. The package management system helps keep the system up-to-date and secure by automatically downloading and installing security updates as soon as they are available. This can be executed manually or set up automatically.
@@ -146,7 +149,6 @@ Terminal emulators and multiplexers are beneficial extensions for the terminal. 
 The most commonly used shell in Linux is the `Bourne-Again Shell` (`BASH`), and is part of the GNU project. Everything we do through the GUI we can do with the shell. The shell gives us many more possibilities to interact with programs and processes to get information faster. Besides, many processes can be easily automated with smaller or larger scripts that make manual work much easier.
 
 Besides Bash, there also exist other shells like [Tcsh/Csh](https://en.wikipedia.org/wiki/Tcsh), [Ksh](https://en.wikipedia.org/wiki/KornShell), [Zsh](https://en.wikipedia.org/wiki/Z_shell), [Fish](https://en.wikipedia.org/wiki/Friendly_interactive_shell) shell and others.
-
 # Prompt Description
 
 ---
@@ -199,33 +201,31 @@ In addition to providing basic information like the current user and working dir
 
 The prompt can be customized using special characters and variables in the shell’s configuration file (`.bashrc` for the Bash shell). For example, we can use: the `\u` character to represent the current username, `\h` for the hostname, and `\w` for the current working directory.
 
-|**Special Character**|**Description**|
-|---|---|
-|`\d`|Date (Mon Feb 6)|
-|`\D{%Y-%m-%d}`|Date (YYYY-MM-DD)|
-|`\H`|Full hostname|
-|`\j`|Number of jobs managed by the shell|
-|`\n`|Newline|
-|`\r`|Carriage return|
-|`\s`|Name of the shell|
-|`\t`|Current time 24-hour (HH:MM:SS)|
-|`\T`|Current time 12-hour (HH:MM:SS)|
-|`\@`|Current time|
-|`\u`|Current username|
-|`\w`|Full path of the current working directory|
+| **Special Character** | **Description**                            |
+| --------------------- | ------------------------------------------ |
+| `\d`                  | Date (Mon Feb 6)                           |
+| `\D{%Y-%m-%d}`        | Date (YYYY-MM-DD)                          |
+| `\H`                  | Full hostname                              |
+| `\j`                  | Number of jobs managed by the shell        |
+| `\n`                  | Newline                                    |
+| `\r`                  | Carriage return                            |
+| `\s`                  | Name of the shell                          |
+| `\t`                  | Current time 24-hour (HH:MM:SS)            |
+| `\T`                  | Current time 12-hour (HH:MM:SS)            |
+| `\@`                  | Current time                               |
+| `\u`                  | Current username                           |
+| `\w`                  | Full path of the current working directory |
 
 Customizing the prompt can be a useful way to make your terminal experience more personalized and efficient. It can also be a helpful tool for troubleshooting and problem-solving, as it can provide important information about the system’s state at any given time.
 
 In addition to customizing the prompt, we can customize their terminal environment with different color schemes, fonts, and other settings to make their work environment more visually appealing and easier to use.
 
 However, we see the same as when working on the Windows GUI here. We are logged in as a user on a computer with a specific name, and we know which directory we are in when we navigate through our system. Bash prompt can also be customized and changed to our own needs. The adjustment of the bash prompt is outside the scope of this module. However, we can look at the [bash-prompt-generator](https://bash-prompt-generator.org/) and [powerline](https://github.com/powerline/powerline), which gives us the possibility to adapt our prompt to our needs.
-
 # Getting Help
 
 ---
 
 We will always stumble across tools whose optional parameters we do not know from memory or tools we have never seen before. Therefore it is vital to know how we can help ourselves to get familiar with those tools. The first two ways are the man pages and the help functions. It is always a good idea to familiarize ourselves with the tool we want to try first. We will also learn some possible tricks with some of the tools that we thought were not possible. In the man pages, we will find the detailed manuals with detailed explanations.
-
 #### Syntax:
 
   Getting Help
@@ -378,7 +378,6 @@ Since we will be working with many different Linux systems, we need to learn the
 |`lspci`|Lists PCI devices.|
 
 Let us look at a few examples.
-
 #### Hostname
 
 The `hostname` command is pretty self-explanatory and will just print the name of the computer that we are logged into
@@ -490,7 +489,6 @@ With this info, we could go and search for "4.15.0-99-generic exploit," and the 
 It is highly recommended to study the commands and understand what they are for and what information they can provide. Though a bit tedious, we can learn much from studying the manpages for common commands. We may even find out things that we did not even know were possible with a given command. This information is not only used for working with Linux. However, it will also be used later to discover vulnerabilities and misconfigurations on the Linux system that may contribute to privilege escalation. Here are a few optional exercises that we can solve for practice purposes, which will help us become familiar with some of the commands.
 
 ---
-
 ## Logging In via SSH
 
 `Secure Shell` (`SSH`) refers to a protocol that allows clients to access and execute commands or actions on remote computers. On Linux-based hosts and servers running or another Unix-like operating system, SSH is one of the permanently installed standard tools and is the preferred choice for many administrators to configure and maintain a computer through remote access. It is an older and very proven protocol that does not require or offer a graphical user interface (GUI). For this reason, it works very efficiently and occupies very few resources. We use this type of connection in the following sections and in most of the other modules to offer the possibility to try out the learned commands and actions in a safe environment. We can connect to our targets with the following command:
@@ -669,7 +667,6 @@ The main difference between working with files in Linux and Windows is the way w
 The terminal in Linux is a more efficient and faster tool because you can access the files directly with a few commands and edit and modify them selectively with regular expressions (`regex`). You can also run several commands simultaneously and redirect the output to a file. This saves time and is very handy when we want to edit many files at once.
 
 ---
-
 ## Create, Move, and Copy
 
 Next, let us work with files and directories and learn how to create, rename, move, copy, and delete. First, let us create an empty file and a directory. We can use `touch` to create an empty file and `mkdir` to create a directory.
@@ -847,4 +844,755 @@ xnoxos@htb[/htb]$ tree .
 ```
 
 There are also many other ways to work with files using redirects or text editors, which we will see and discuss later in other sections.
+
+## Editing Files
+
+---
+
+There are several ways to edit a file. One of the most common text editors for this is `Vi` and `Vim`. More rarely, there is the `Nano` editor. We will first deal with the Nano editor here, as it is a bit easier to understand. We can create a new file directly with the Nano editor by specifying the file's name directly as the first parameter. In this case, we create a new file named `notes.txt`.
+
+```shell-session
+[!bash!]$ nano notes.txt
+```
+
+Now we should see a so-called "`pager`" open, and we can freely enter or insert any text. Our shell should then look something like this.
+
+#### Nano Editor
+
+```shell-session
+  GNU nano 2.9.3                                    notes.txt                                              
+
+Here we can type everything we want and make our notes.▓
+
+
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo
+^X Exit        ^R Read File   ^\ Replace     ^U Uncut Text  ^T To Spell    ^_ Go To Line  M-E Redo
+```
+
+Below we see two lines with short descriptions. The `caret` (`^`) stands for our "`[CTRL]`" key. For example, if we press `[CTRL + W]`, a "`Search:`" line appears at the bottom of the editor, where we can enter the word or words we are looking for. If we now search for the word "`we`" and press `[ENTER]`, the cursor will move to the first word that matches.
+
+```shell-session
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here ▓we can type everything we want and make our notes.
+
+Search:   notes                                                                                            
+^G Get Help    M-C Case Sens  M-B Backwards  M-J FullJstify ^W Beg of Par  ^Y First Line  ^P PrevHstory
+^C Cancel      M-R Regexp     ^R Replace     ^T Go To Line  ^O End of Par  ^V Last Line   ^N NextHstory
+```
+
+To jump to the next match with the cursor, we press `[CTRL + W]` again and confirm with `[ENTER]` without any additional information.
+
+```shell-session
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here we can type everything ▓we want and make our notes.
+
+Search [we]:                                                                                               
+^G Get Help    M-C Case Sens  M-B Backwards  M-J FullJstify ^W Beg of Par  ^Y First Line  ^P PrevHstory
+^C Cancel      M-R Regexp     ^R Replace     ^T Go To Line  ^O End of Par  ^V Last Line   ^N NextHstory
+```
+
+Now we can save the file by pressing `[CTRL + O]` and confirm the file name with `[ENTER]`.
+
+```shell-session
+GNU nano 2.9.3                                    notes.txt                                              
+
+Here we can type everything we want and make our notes.
+
+File Name to Write: notes.txt▓                                                                           
+^G Get Help    M-C Case Sens  M-B Backwards  M-J FullJstify ^W Beg of Par  ^Y First Line  ^P PrevHstory
+^C Cancel      M-R Regexp     ^R Replace     ^T Go To Line  ^O End of Par  ^V Last Line   ^N NextHstory
+```
+
+After we have saved the file, we can leave the editor with `[CTRL + X]`.
+
+#### Back on the Shell
+
+To view the contents of the file, we can use the command `cat`.
+
+```shell-session
+[!bash!]$ cat notes.txt
+
+Here we can type everything we want and make our notes.
+```
+
+There are many files on Linux systems that can play an essential role for us as penetration testers whose rights have not been correctly set by the administrators. Such files may include the file "`/etc/passwd`".
+
+---
+## VIM
+
+`Vim` is an open-source editor for all kinds of ASCII text, just like Nano. It is an improved clone of the previous Vi. It is an extremely powerful editor that focuses on the essentials, namely editing text. For tasks that go beyond that, Vim provides an interface to external programs, such as `grep`, `awk`, `sed`, etc., which can handle their specific tasks much better than a corresponding function directly implemented in an editor usually can. This makes the editor small and compact, fast, powerful, flexible, and less error-prone.
+
+Vim follows the Unix principle here: many small specialized programs that are well tested and proven, when combined and communicating with each other, resulting in a flexible and powerful system.
+
+#### Vim
+
+```shell-session
+[!bash!]$ vim
+```
+
+```shell-session
+  1 $
+~
+~                              VIM - Vi IMproved                                
+~                                                                               
+~                               version 8.0.1453                                
+~                           by Bram Moolenaar et al.                            
+~           Modified by pkg-vim-maintainers@lists.alioth.debian.org             
+~                 Vim is open source and freely distributable                   
+~                                                                               
+~                           Sponsor Vim development!                            
+~                type  :help sponsor<Enter>    for information                  
+~                                                                               
+~                type  :q<Enter>               to exit                          
+~                type  :help<Enter>  or  <F1>  for on-line help                 
+~                type  :help version8<Enter>   for version info                 
+~                                                                               
+                                                                         
+                                                                    0,0-1         All
+```
+
+In contrast to Nano, `Vim` is a modal editor that can distinguish between text and command input. Vim offers a total of six fundamental modes that make our work easier and make this editor so powerful:
+
+|**Mode**|**Description**|
+|---|---|
+|`Normal`|In normal mode, all inputs are considered as editor commands. So there is no insertion of the entered characters into the editor buffer, as is the case with most other editors. After starting the editor, we are usually in the normal mode.|
+|`Insert`|With a few exceptions, all entered characters are inserted into the buffer.|
+|`Visual`|The visual mode is used to mark a contiguous part of the text, which will be visually highlighted. By positioning the cursor, we change the selected area. The highlighted area can then be edited in various ways, such as deleting, copying, or replacing it.|
+|`Command`|It allows us to enter single-line commands at the bottom of the editor. This can be used for sorting, replacing text sections, or deleting them, for example.|
+|`Replace`|In replace mode, the newly entered text will overwrite existing text characters unless there are no more old characters at the current cursor position. Then the newly entered text will be added.|
+
+When we have the Vim editor open, we can go into command mode by typing "`:`" and then typing "`q`" to close Vim.
+
+```shell-session
+  1 $
+~
+~                              VIM - Vi IMproved                                
+~                                                                               
+~                               version 8.0.1453                                
+~                           by Bram Moolenaar et al.                            
+~           Modified by pkg-vim-maintainers@lists.alioth.debian.org             
+~                 Vim is open source and freely distributable                   
+~                                                                               
+~                           Sponsor Vim development!                            
+~                type  :help sponsor<Enter>    for information                  
+~                                                                               
+~                type  :q<Enter>               to exit                          
+~                type  :help<Enter>  or  <F1>  for on-line help                 
+~                type  :help version8<Enter>   for version info                 
+~                                                                               
+:q▓
+```
+
+Vim offers an excellent opportunity called `vimtutor` to practice and get familiar with the editor. It may seem very difficult and complicated at first, but it will only feel that way for a short time. The efficiency we gain from Vim once we get used to it is enormous. Entering the tutor mode can be done using the `Command` mode `:Tutor`.
+
+#### VimTutor
+
+```shell-session
+[!bash!]$ vimtutor
+```
+
+```shell-session
+===============================================================================
+=    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7      =
+===============================================================================
+
+     Vim is a very powerful editor that has many commands, too many to
+     explain in a tutor such as this.  This tutor is designed to describe
+     enough of the commands that you will be able to easily use Vim as
+     an all-purpose editor.
+
+     The approximate time required to complete the tutor is 25-30 minutes,
+     depending upon how much time is spent with experimentation.
+
+     ATTENTION:
+     The commands in the lessons will modify the text.  Make a copy of this
+     file to practice on (if you started "vimtutor" this is already a copy).
+
+     It is important to remember that this tutor is set up to teach by
+     use.  That means that you need to execute the commands to learn them
+     properly.  If you only read the text, you will forget the commands!
+
+     Now, make sure that your Caps-Lock key is NOT depressed and press
+     the   j   key enough times to move the cursor so that lesson 1.1
+     completely fills the screen.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
+# Find Files and Directories
+
+---
+
+## Importance of the Search
+
+It is crucial to be able to find the files and folders we need. Once we have gained access to a Linux based system, it will be essential to find configuration files, scripts created by users or the administrator, and other files and folders. We do not have to manually browse through every single folder and check when modified for the last time. There are some tools we can use to make this work easier.
+
+---
+
+## Which
+
+One of the common tools is `which`. This tool returns the path to the file or link that should be executed. This allows us to determine if specific programs, like cURL, netcat, wget, python, gcc, are available on the operating system. Let us use it to search for Python in our interactive instance.
+
+  Find Files and Directories
+
+```shell-session
+xnoxos@htb[/htb]$ which python
+
+/usr/bin/python
+```
+
+If the program we search for does not exist, no results will be displayed.
+
+---
+
+## Find
+
+Another handy tool is `find`. Besides the function to find files and folders, this tool also contains the function to filter the results. We can use filter parameters like the size of the file or the date. We can also specify if we only search for files or folders.
+
+#### Syntax - find
+
+  Find Files and Directories
+
+```shell-session
+xnoxos@htb[/htb]$ find <location> <options>
+```
+
+Let us look at an example of what such a command with multiple options would look like.
+
+  Find Files and Directories
+
+```shell-session
+xnoxos@htb[/htb]$ find / -type f -name *.conf -user root -size +20k -newermt 2020-03-03 -exec ls -al {} \; 2>/dev/null
+
+-rw-r--r-- 1 root root 136392 Apr 25 20:29 /usr/src/linux-headers-5.5.0-1parrot1-amd64/include/config/auto.conf
+-rw-r--r-- 1 root root 82290 Apr 25 20:29 /usr/src/linux-headers-5.5.0-1parrot1-amd64/include/config/tristate.conf
+-rw-r--r-- 1 root root 95813 May  7 14:33 /usr/share/metasploit-framework/data/jtr/repeats32.conf
+-rw-r--r-- 1 root root 60346 May  7 14:33 /usr/share/metasploit-framework/data/jtr/dynamic.conf
+-rw-r--r-- 1 root root 96249 May  7 14:33 /usr/share/metasploit-framework/data/jtr/dumb32.conf
+-rw-r--r-- 1 root root 54755 May  7 14:33 /usr/share/metasploit-framework/data/jtr/repeats16.conf
+-rw-r--r-- 1 root root 22635 May  7 14:33 /usr/share/metasploit-framework/data/jtr/korelogic.conf
+-rwxr-xr-x 1 root root 108534 May  7 14:33 /usr/share/metasploit-framework/data/jtr/john.conf
+-rw-r--r-- 1 root root 55285 May  7 14:33 /usr/share/metasploit-framework/data/jtr/dumb16.conf
+-rw-r--r-- 1 root root 21254 May  2 11:59 /usr/share/doc/sqlmap/examples/sqlmap.conf
+-rw-r--r-- 1 root root 25086 Mar  4 22:04 /etc/dnsmasq.conf
+-rw-r--r-- 1 root root 21254 May  2 11:59 /etc/sqlmap/sqlmap.conf
+```
+
+Now let us take a closer look at the options we used in the previous command. If we hover the mouse over the respective options, a small window will appear with an explanation. These explanations will also be found in other modules, which should help us if we are not yet familiar with one of the tools.
+
+|**Option**|**Description**|
+|---|---|
+|`-type f`|Hereby, we define the type of the searched object. In this case, '`f`' stands for '`file`'.|
+|`-name *.conf`|With '`-name`', we indicate the name of the file we are looking for. The asterisk (`*`) stands for 'all' files with the '`.conf`' extension.|
+|`-user root`|This option filters all files whose owner is the root user.|
+|`-size +20k`|We can then filter all the located files and specify that we only want to see the files that are larger than 20 KiB.|
+|`-newermt 2020-03-03`|With this option, we set the date. Only files newer than the specified date will be presented.|
+|`-exec ls -al {} \;`|This option executes the specified command, using the curly brackets as placeholders for each result. The backslash escapes the next character from being interpreted by the shell because otherwise, the semicolon would terminate the command and not reach the redirection.|
+|`2>/dev/null`|This is a `STDERR` redirection to the '`null device`', which we will come back to in the next section. This redirection ensures that no errors are displayed in the terminal. This redirection must `not` be an option of the 'find' command.|
+
+---
+
+## Locate
+
+It will take much time to search through the whole system for our files and directories to perform many different searches. The command `locate` offers us a quicker way to search through the system. In contrast to the `find` command, `locate` works with a local database that contains all information about existing files and folders. We can update this database with the following command.
+
+  Find Files and Directories
+
+```shell-session
+xnoxos@htb[/htb]$ sudo updatedb
+```
+
+If we now search for all files with the "`.conf`" extension, you will find that this search produces results much faster than using `find`.
+
+  Find Files and Directories
+
+```shell-session
+xnoxos@htb[/htb]$ locate *.conf
+
+/etc/GeoIP.conf
+/etc/NetworkManager/NetworkManager.conf
+/etc/UPower/UPower.conf
+/etc/adduser.conf
+<SNIP>
+```
+
+However, this tool does not have as many filter options that we can use. So it is always worth considering whether we can use the `locate` command or instead use the `find` command. It always depends on what we are looking for.
+
+# File Descriptors and Redirections
+
+---
+## File Descriptors
+
+A file descriptor (FD) in Unix/Linux operating systems is an indicator of connection maintained by the kernel to perform Input/Output (I/O) operations. In Windows-based operating systems, it is called filehandle. It is the connection (generally to a file) from the Operating system to perform I/O operations (Input/Output of Bytes). By default, the first three file descriptors in Linux are:
+
+1. Data Stream for Input
+    - `STDIN – 0`
+2. Data Stream for Output
+    - `STDOUT – 1`
+3. Data Stream for Output that relates to an error occurring.
+    - `STDERR – 2`
+
+---
+
+#### STDIN and STDOUT
+
+Let us see an example with `cat`. When running `cat`, we give the running program our standard input (`STDIN - FD 0`), marked `green`, wherein this case "SOME INPUT" is. As soon as we have confirmed our input with `[ENTER]`, it is returned to the terminal as standard output (`STDOUT - FD 1`), marked **red**.
+
+![image](https://academy.hackthebox.com/storage/modules/18/find0.png)
+
+---
+
+#### STDOUT and STDERR
+
+In the next example, by using the `find` command, we will see the standard output (`STDOUT - FD 1`) marked in `green` and standard error (`STDERR - FD 2`) marked in red.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name shadow
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find1.png)
+
+In this case, the error is marked and displayed with "`Permission denied`". We can check this by redirecting the file descriptor for the errors (`FD 2 - STDERR`) to "`/dev/null`." This way, we redirect the resulting errors to the "null device," which discards all data.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name shadow 2>/dev/null
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find2.png)
+
+---
+#### Redirect STDOUT to a File
+
+Now we can see that all errors (`STDERR`) previously presented with "`Permission denied`" are no longer displayed. The only result we see now is the standard output (`STDOUT`), which we can also redirect to a file with the name `results.txt` that will only contain standard output without the standard errors.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name shadow 2>/dev/null > results.txt
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find3.png)
+
+---
+#### Redirect STDOUT and STDERR to Separate Files
+
+We should have noticed that we did not use a number before the greater-than sign (`>`) in the last example. That is because we redirected all the standard errors to the "`null device`" before, and the only output we get is the standard output (`FD 1 - STDOUT`). To make this more precise, we will redirect standard error (`FD 2 - STDERR`) and standard output (`FD 1 - STDOUT`) to different files.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name shadow 2> stderr.txt 1> stdout.txt
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find4.png)
+
+---
+#### Redirect STDIN
+
+As we have already seen, in combination with the file descriptors, we can redirect errors and output with greater-than character (`>`). This also works with the lower-than sign (`<`). However, the lower-than sign serves as standard input (`FD 0 - STDIN`). These characters can be seen as "`direction`" in the form of an arrow that tells us "`from where`" and "`where to`" the data should be redirected. We use the `cat` command to use the contents of the file "`stdout.txt`" as `STDIN`.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ cat < stdout.txt
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find5.png)
+
+---
+
+#### Redirect STDOUT and Append to a File
+
+When we use the greater-than sign (`>`) to redirect our `STDOUT`, a new file is automatically created if it does not already exist. If this file exists, it will be overwritten without asking for confirmation. If we want to append `STDOUT` to our existing file, we can use the double greater-than sign (`>>`).
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name passwd >> stdout.txt 2>/dev/null
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find9.png)
+
+---
+#### Redirect STDIN Stream to a File
+
+We can also use the double lower-than characters (`<<`) to add our standard input through a stream. We can use the so-called `End-Of-File` (`EOF`) function of a Linux system file, which defines the input's end. In the next example, we will use the `cat` command to read our streaming input through the stream and direct it to a file called "`stream.txt`."
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ cat << EOF > stream.txt
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find6.png)
+
+---
+#### Pipes
+
+Another way to redirect `STDOUT` is to use pipes (`|`). These are useful when we want to use the `STDOUT` from one program to be processed by another. One of the most commonly used tools is `grep`, which we will use in the next example. Grep is used to filter `STDOUT` according to the pattern we define. In the next example, we use the `find` command to search for all files in the "`/etc/`" directory with a "`.conf`" extension. Any errors are redirected to the "`null device`" (`/dev/null`). Using `grep`, we filter out the results and specify that only the lines containing the pattern "`systemd`" should be displayed.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name *.conf 2>/dev/null | grep systemd
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find7.png)
+
+The redirections work, not only once. We can use the obtained results to redirect them to another program. For the next example, we will use the tool called `wc`, which should count the total number of obtained results.
+
+  File Descriptors and Redirections
+
+```shell-session
+xnoxos@htb[/htb]$ find /etc/ -name *.conf 2>/dev/null | grep systemd | wc -l
+```
+
+![image](https://academy.hackthebox.com/storage/modules/18/find8.png)
+
+# Filter Contents
+
+---
+
+In the last section, we learned about the redirections we can use to redirect results from one program to another for processing. To read files, we do not necessarily have to use an editor for that. There are two tools called `more` and `less`, which are very identical. These are fundamental `pagers` that allow us to scroll through the file in an interactive view. Let us have a look at some examples.
+
+---
+## More
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ more /etc/passwd
+```
+
+After we read the content using `cat` and redirected it to `more`, the already mentioned `pager` opens, and we will automatically start at the beginning of the file.
+
+  Filter Contents
+
+```shell-session
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+<SNIP>
+--More--
+```
+
+With the `[Q]` key, we can leave this `pager`. We will notice that the output remains in the terminal.
+
+---
+## Less
+
+If we now take a look at the tool `less`, we will notice on the man page that it contains many more features than `more`.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ less /etc/passwd
+```
+
+The presentation is almost the same as with `more`.
+
+  Filter Contents
+
+```shell-session
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+<SNIP>
+:
+```
+
+When closing `less` with the `[Q]` key, we will notice that the output we have seen, unlike `more`, does not remain in the terminal.
+
+---
+## Head
+
+Sometimes we will only be interested in specific issues either at the beginning of the file or the end. If we only want to get the `first` lines of the file, we can use the tool `head`. By default, `head` prints the first ten lines of the given file or input, if not specified otherwise.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ head /etc/passwd
+
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+```
+
+---
+## Tail
+
+If we only want to see the last parts of a file or results, we can use the counterpart of `head` called `tail`, which returns the `last` ten lines.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ tail /etc/passwd
+
+miredo:x:115:65534::/var/run/miredo:/usr/sbin/nologin
+usbmux:x:116:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:117:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+nm-openvpn:x:118:120:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+nm-openconnect:x:119:121:NetworkManager OpenConnect plugin,,,:/var/lib/NetworkManager:/usr/sbin/nologin
+pulse:x:120:122:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+beef-xss:x:121:124::/var/lib/beef-xss:/usr/sbin/nologin
+lightdm:x:122:125:Light Display Manager:/var/lib/lightdm:/bin/false
+do-agent:x:998:998::/home/do-agent:/bin/false
+user6:x:1000:1000:,,,:/home/user6:/bin/bash
+```
+
+---
+## Sort
+
+Depending on which results and files are dealt with, they are rarely sorted. Often it is necessary to sort the desired results alphabetically or numerically to get a better overview. For this, we can use a tool called `sort`.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | sort
+
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+cry0l1t3:x:1001:1001::/home/cry0l1t3:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+dovecot:x:114:117:Dovecot mail server,,,:/usr/lib/dovecot:/usr/sbin/nologin
+dovenull:x:115:118:Dovecot login user,,,:/nonexistent:/usr/sbin/nologin
+ftp:x:113:65534::/srv/ftp:/usr/sbin/nologin
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+htb-student:x:1002:1002::/home/htb-student:/bin/bash
+<SNIP>
+```
+
+As we can see now, the output no longer starts with root but is now sorted alphabetically.
+
+---
+## Grep
+
+More often, we will only search for specific results that contain patterns we have defined. One of the most used tools for this is `grep`, which offers many different features. Accordingly, we can search for users who have the default shell "`/bin/bash`" set as an example.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep "/bin/bash"
+
+root:x:0:0:root:/root:/bin/bash
+mrb3n:x:1000:1000:mrb3n:/home/mrb3n:/bin/bash
+cry0l1t3:x:1001:1001::/home/cry0l1t3:/bin/bash
+htb-student:x:1002:1002::/home/htb-student:/bin/bash
+```
+
+Another possibility is to exclude specific results. For this, the option "`-v`" is used with `grep`. In the next example, we exclude all users who have disabled the standard shell with the name "`/bin/false`" or "`/usr/bin/nologin`".
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin"
+
+root:x:0:0:root:/root:/bin/bash
+sync:x:4:65534:sync:/bin:/bin/sync
+postgres:x:111:117:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+user6:x:1000:1000:,,,:/home/user6:/bin/bash
+```
+
+---
+## Cut
+
+Specific results with different characters may be separated as delimiters. Here it is handy to know how to remove specific delimiters and show the words on a line in a specified position. One of the tools that can be used for this is `cut`. Therefore we use the option "`-d`" and set the delimiter to the colon character (`:`) and define with the option "`-f`" the position in the line we want to output.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin" | cut -d":" -f1
+
+root
+sync
+mrb3n
+cry0l1t3
+htb-student
+```
+
+---
+## Tr
+
+Another possibility to replace certain characters from a line with characters defined by us is the tool `tr`. As the first option, we define which character we want to replace, and as a second option, we define the character we want to replace it with. In the next example, we replace the colon character with space.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin" | tr ":" " "
+
+root x 0 0 root /root /bin/bash
+sync x 4 65534 sync /bin /bin/sync
+mrb3n x 1000 1000 mrb3n /home/mrb3n /bin/bash
+cry0l1t3 x 1001 1001  /home/cry0l1t3 /bin/bash
+htb-student x 1002 1002  /home/htb-student /bin/bash
+```
+
+---
+## Column
+
+Since search results can often have an unclear representation, the tool `column` is well suited to display such results in tabular form using the "`-t`."
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin" | tr ":" " " | column -t
+
+root         x  0     0      root               /root        /bin/bash
+sync         x  4     65534  sync               /bin         /bin/sync
+mrb3n        x  1000  1000   mrb3n              /home/mrb3n  /bin/bash
+cry0l1t3     x  1001  1001   /home/cry0l1t3     /bin/bash
+htb-student  x  1002  1002   /home/htb-student  /bin/bash
+```
+
+---
+## Awk
+
+As we may have noticed, the user "`postgres`" has one row too many. To keep it as simple as possible to sort out such results, the (`g`)`awk` programming is beneficial, which allows us to display the first (`$1`) and last (`$NF`) result of the line.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin" | tr ":" " " | awk '{print $1, $NF}'
+
+root /bin/bash
+sync /bin/sync
+mrb3n /bin/bash
+cry0l1t3 /bin/bash
+htb-student /bin/bash
+```
+
+---
+## Sed
+
+There will come moments when we want to change specific names in the whole file or standard input. One of the tools we can use for this is the stream editor called `sed`. One of the most common uses of this is substituting text. Here, `sed` looks for patterns we have defined in the form of regular expressions (regex) and replaces them with another pattern that we have also defined. Let us stick to the last results and say we want to replace the word "`bin`" with "`HTB`."
+
+The "`s`" flag at the beginning stands for the substitute command. Then we specify the pattern we want to replace. After the slash (`/`), we enter the pattern we want to use as a replacement in the third position. Finally, we use the "`g`" flag, which stands for replacing all matches.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin" | tr ":" " " | awk '{print $1, $NF}' | sed 's/bin/HTB/g'
+
+root /HTB/bash
+sync /HTB/sync
+mrb3n /HTB/bash
+cry0l1t3 /HTB/bash
+htb-student /HTB/bash
+```
+
+---
+## Wc
+
+Last but not least, it will often be useful to know how many successful matches we have. To avoid counting the lines or characters manually, we can use the tool `wc`. With the "`-l`" option, we specify that only the lines are counted.
+
+  Filter Contents
+
+```shell-session
+xnoxos@htb[/htb]$ cat /etc/passwd | grep -v "false\|nologin" | tr ":" " " | awk '{print $1, $NF}' | wc -l
+
+5
+```
+
+---
+## Practice
+
+It may be a bit overwhelming at first to deal with so many different tools and their functions if we are not familiar with them. Take your time and experiment with the tools. Have a look at the man pages (`man <tool>`) or call the help for it (`<tool> -h` / `<tool> --help`). The best way to become familiar with all the tools is to practice. Try to use them as often as possible, and we will be able to filter many things intuitively after a short time.
+
+Here are a few optional exercises we can use to improve our filtering skills and get more familiar with the terminal and the commands. The file we will need to work with is the `/etc/passwd` file on our `target` and we can use any shown command above. Our goal is to filter and display only specific contents. Read the file and filter its contents in such a way that we see only
+
+1. A line with the username `cry0l1t3`.
+2. The usernames.
+3. The username `cry0l1t3` and his UID.
+4. The username `cry0l1t3` and his UID separated by a comma (`,`).
+5. The username `cry0l1t3`, his UID, and the set shell separated by a comma (`,`).
+6. All usernames with their UID and set shells separated by a comma (`,`).
+7. All usernames with their UID and set shells separated by a comma (`,`) and exclude the ones that contain `nologin` or `false`.
+8. All usernames with their UID and set shells separated by a comma (`,`) and exclude the ones that contain `nologin` and count all lines of the filtered output.
+
+# Regular Expressions
+
+---
+
+Regular expressions (`RegEx`) are an art of expression language to search for patterns in text and files. They can be used to find and replace text, analyze data, validate input, perform searches, and more. In simple terms, they are a filter criterion that can be used to analyze and manipulate strings. They are available in various programming languages and programs and are used in many different ways and functions.
+
+A regular expression is a sequence of letters and symbols that form a search pattern. In addition, regular expressions can be created with patterns called metacharacters. Meta characters are symbols that define the search pattern but have no literal meaning. We can use it in tools like `grep` or `sed` or others. Often regex is implemented in web applications for the validation of user input.
+
+---
+## Grouping
+
+Among other things, regex offers us the possibility to group the desired search patterns. Basically, regex follows three different concepts, which are distinguished by the three different brackets:
+### Grouping Operators
+
+||**Operators**|**Description**|
+|---|---|---|
+|1|`(a)`|The round brackets are used to group parts of a regex. Within the brackets, you can define further patterns which should be processed together.|
+|2|`[a-z]`|The square brackets are used to define character classes. Inside the brackets, you can specify a list of characters to search for.|
+|3|`{1,10}`|The curly brackets are used to define quantifiers. Inside the brackets, you can specify a number or a range that indicates how often a previous pattern should be repeated.|
+|4|`\|`|Also called the OR operator and shows results when one of the two expressions matches|
+|5|`.*`|Also called the AND operator and displayed results only if both expressions match|
+
+Suppose we use the `OR` operator. The regex searches for one of the given search parameters. In the next example, we search for lines containing the word `my` or `false`. To use these operators, you need to apply the extended regex using the `-E` option in grep.
+
+#### OR operator
+
+  Regular Expressions
+
+```shell-session
+cry0l1t3@htb:~$ grep -E "(my|false)" /etc/passwd
+
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+mysql:x:116:120:MySQL Server,,:/nonexistent:/bin/false
+```
+
+Since one of the two search parameters always occurs in the three lines, all three lines are displayed accordingly. However, if we use the `AND` operator, we will get a different result for the same search parameters.
+#### AND operator
+
+  Regular Expressions
+
+```shell-session
+cry0l1t3@htb:~$ grep -E "(my.*false)" /etc/passwd
+
+mysql:x:116:120:MySQL Server,,:/nonexistent:/bin/false
+```
+
+Basically, what we are saying with this command is that we are looking for a line where we want to see both `my` and `false`. A simplified example would also be to use `grep` twice and look like this:
+
+  Regular Expressions
+
+```shell-session
+cry0l1t3@htb:~$ grep -E "my" /etc/passwd | grep -E "false"
+
+mysql:x:116:120:MySQL Server,,:/nonexistent:/bin/false
+```
+
+---
+
+Here are some optional tasks to practice regex that can help us to handle it better and more efficiently. For all exercises, we will use the `/etc/ssh/sshd_config` file on our `Pwnbox` instance.
+
+1. Show all lines that do not contain the `#` character.
+2. Search for all lines that contain a word that starts with `Permit`.
+3. Search for all lines that contain a word ending with `Authentication`.
+4. Search for all lines containing the word `Key`.
+5. Search for all lines beginning with `Password` and containing `yes`.
+6. Search for all lines that end with `yes`.
 
