@@ -19,7 +19,6 @@ Linux is an operating system like Windows, iOS, Android, or macOS. An OS is soft
 With the interactive instances, we get access to the Pwnbox, a customized version of Parrot OS. This will be the primary OS we will work with through the modules. Parrot OS is a Debian-based Linux distribution that focuses on security, privacy, and development.
 
 ---
-
 ## Philosophy
 
 Linux follows five core principles:
@@ -33,7 +32,6 @@ Linux follows five core principles:
 |`Configuration data stored in a text file`|An example of such a file is the `/etc/passwd` file, which stores all users registered on the system.|
 
 ---
-
 ## Components
 
 |**Component**|**Description**|
@@ -47,7 +45,6 @@ Linux follows five core principles:
 |`Utilities`|Applications or utilities are programs that perform particular functions for the user or another program.|
 
 ---
-
 ## Linux Architecture
 
 The Linux operating system can be broken down into layers:
@@ -60,7 +57,6 @@ The Linux operating system can be broken down into layers:
 |`System Utility`|Makes available to the user all of the operating system's functionality.|
 
 ---
-
 ## File System Hierarchy
 
 The Linux operating system is structured in a tree-like hierarchy and is documented in the [Filesystem Hierarchy](http://www.pathname.com/fhs/) Standard (FHS). Linux is structured with the following standard top-level directories:
@@ -133,7 +129,6 @@ A Linux terminal, also called a `shell` or command line, provides a text-based
 We can think of a shell as a text-based GUI in which we enter commands to perform actions like navigating to other directories, working with files, and obtaining information from the system but with way more capabilities.
 
 ---
-
 ## Terminal Emulators
 
 Terminal emulation is software that emulates the function of a terminal. It allows the use of text-based programs within a graphical user interface (`GUI`). There are also so-called command-line interfaces (`CLI`) that run as additional terminals in one terminal. In short, a terminal serves as an interface to the shell interpreter.
